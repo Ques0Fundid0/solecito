@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para ti ❤️</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background-image:url("https://i.pinimg.com/originals/89/8a/14/898a14d06c6c0bf27b8ceaf749cecb4c.gif");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mensaje{
+    color:white;
+    font-size:2rem;
+    max-width:800px;
+    padding:30px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+</style>
+</head>
+
+<body>
+
+<div id="mensaje"></div>
+
+<script>
+const mensajes = [
+"Tienes los ojitos más bellos que he visto",
+"Por ti compartiría mis nuggets de dinosaurio",
+"https://www.youtube.com/watch?v=G8sCgFOElSU&list=PLYS7lN8O8WfykCWh6G1RYq79lhzsCtrDS&index=3",
+"Siento que me haces ser mejor persona",
+"Me encanta escuchar tu voz para quedarme dormida",
+"Si viste este mensaje me debes un beso <3",
+"Te amo incluso más que a Garfield, eso es mucho",
+"Aunque me lo niegues, amo tu creatividad"
+"Eres el skibidi de mi toilet"
+"¿estás recargando la página para ver todos los mensajes?"
+"Te amo porque me haces sentir importante"
+"Nunca dejas de sorprenderme, y eso me encanta"
+"Suenas muy lindo cuando hablas emocionado de tus cosas"
+"Me alegra muchísimo que seas parte de mi vida"
+"Gracias por existir"
+"Si fueramos enanos, ¿podríamos montar en pony juntos?"
+"uhuuhhu uUHhH UHHGHFGKDGH UHHH (te amo en idioma monil)"
+"Siempre estás en mi cabecita, ¿cómo lo haces?"
+"No te imaginas cuanto amo presumirte como mi pareja"
+"¿Recuerdas nuestra primera llamada donde no podía ni hablar? gracias por hacerme sentir tan segura ese día"
+"Si dudas de mi amor, recuerda que tienes una página entera para decirte cuanto te amo!!"
+"SECRETITO!! La primera vez que nos besamos sentí esa cosa magica que le pasaba a la cenicienta cuando tocaba al principe"
+"ʕ•ᴥ•ʔ <-- eres tu :D"
+"skibidi dop dop yes yes"
+"Te amaría si fueras un caracol <33"
+"Gracias por comprenderme cuando me pongo special"
+"Eres el 6 de mi 7"
+"¿Estás sonriendo? Amo esa sonrisita tonota"
+"Eres el sas de mi sos"
+"Eres mi lugar seguro"
+"Amo chismear contigo"
+"Gracias por aterrizarme a tierra cuando me hace falta"
+"TE AMO!!!! AAHHGJ TE AMO TANTO AAAHHGHJJHGJJJJJMNM"
+"No importa cuanto escriba aquí, jamás será suficiente para decirte cuanto te amo"
+"Haces que el silencio se sienta cómodo"
+"Hola! Ya te dije que te quiero muchísimo?"
+"ESOO GUAPOOOOOO AUUUUU QUE GUAPO MI NOVIOOO"
+"Aunque el sol esté lejos aún me hace sentir cálida cuando brilla, por eso tu eres mi solecito <3"
+"Todavía me emociono con tus notificaciones"
+"Estoy muy orgullosa de ti <3"
+"Solo hace falta pensarte unos segundos para volver a enamorarme aún más de ti <3"
+"Cada día descubro nuevos límites de cuanto puedo llegar a amar gracias a ti"
+];
+
+const aleatorio =
+mensajes[Math.floor(Math.random() * mensajes.length)];
+
+document.getElementById("mensaje").textContent = aleatorio;
+</script>
+
+</body>
+</html>
