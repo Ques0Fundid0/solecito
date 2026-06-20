@@ -23,7 +23,7 @@ body{
 }
 
 #mensaje{
-    color:red;
+    color:white;
     font-size:3rem;
     max-width:800px;
     padding:30px;
@@ -79,10 +79,8 @@ const mensajes = [
 "Solo hace falta pensarte unos segundos para volver a enamorarme aún más de ti <3",
 "Cada día descubro nuevos límites de cuanto puedo llegar a amar gracias a ti"
 ];
-</script>
 
-const aleatorio =
-mensajes[Math.floor(Math.random() * mensajes.length)];
+const aleatorio = mensajes[Math.floor(Math.random() * mensajes.length)];
 
 document.getElementById("mensaje").textContent = aleatorio;
 </script>
