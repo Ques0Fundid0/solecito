@@ -28,6 +28,9 @@ body{
     max-width:800px;
     padding:30px;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+
+    opacity:1;
+    transition: opacity 0.8s ease;
 }
 </style>
 </head>
@@ -53,7 +56,7 @@ const mensajes = [
 "Me alegra muchísimo que seas parte de mi vida",
 "Gracias por existir",
 "Si fueramos enanos, podríamos montar en pony juntos?",
-"te amo en idioma monil",
+"uuguhhghfhghfhg te amo en idioma monil",
 "Siempre estás en mi cabecita, cómo lo haces?",
 "No te imaginas cuanto amo presumirte como mi pareja",
 "Recuerdas nuestra primera llamada donde no podía ni hablar? gracias por hacerme sentir tan segura ese día",
@@ -80,9 +83,26 @@ const mensajes = [
 "Cada día descubro nuevos límites de cuanto puedo llegar a amar gracias a ti"
 ];
 
-const aleatorio = mensajes[Math.floor(Math.random() * mensajes.length)];
+const mensajeEl = document.getElementById("mensaje");
 
-document.getElementById("mensaje").textContent = aleatorio;
+function cambiarMensaje(){
+    // fade out
+    mensajeEl.style.opacity = 0;
+
+    setTimeout(() => {
+        const aleatorio = mensajes[Math.floor(Math.random() * mensajes.length)];
+        mensajeEl.textContent = aleatorio;
+
+        // fade in
+        mensajeEl.style.opacity = 1;
+    }, 400);
+}
+
+// primer mensaje
+cambiarMensaje();
+
+// cambiar al recargar clic (opcional pero bonito)
+document.body.addEventListener("click", cambiarMensaje);
 </script>
 
 </body>
